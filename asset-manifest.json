@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/koro-koro-kirby/static/css/main.1971b7cc.chunk.css",
-    "main.js": "/koro-koro-kirby/static/js/main.fc1b3d42.chunk.js",
-    "main.js.map": "/koro-koro-kirby/static/js/main.fc1b3d42.chunk.js.map",
+    "main.css": "/koro-koro-kirby/static/css/main.d69c9577.chunk.css",
+    "main.js": "/koro-koro-kirby/static/js/main.ffbf4b91.chunk.js",
+    "main.js.map": "/koro-koro-kirby/static/js/main.ffbf4b91.chunk.js.map",
     "runtime~main.js": "/koro-koro-kirby/static/js/runtime~main.cc406e74.js",
     "runtime~main.js.map": "/koro-koro-kirby/static/js/runtime~main.cc406e74.js.map",
-    "static/js/2.5b025c7c.chunk.js": "/koro-koro-kirby/static/js/2.5b025c7c.chunk.js",
-    "static/js/2.5b025c7c.chunk.js.map": "/koro-koro-kirby/static/js/2.5b025c7c.chunk.js.map",
+    "static/js/2.36254c14.chunk.js": "/koro-koro-kirby/static/js/2.36254c14.chunk.js",
+    "static/js/2.36254c14.chunk.js.map": "/koro-koro-kirby/static/js/2.36254c14.chunk.js.map",
     "index.html": "/koro-koro-kirby/index.html",
-    "precache-manifest.a8147fbd94b5bec6bee435ca25437e2b.js": "/koro-koro-kirby/precache-manifest.a8147fbd94b5bec6bee435ca25437e2b.js",
+    "precache-manifest.8417a104fea0f0275464a11b4e22d321.js": "/koro-koro-kirby/precache-manifest.8417a104fea0f0275464a11b4e22d321.js",
     "service-worker.js": "/koro-koro-kirby/service-worker.js",
-    "static/css/main.1971b7cc.chunk.css.map": "/koro-koro-kirby/static/css/main.1971b7cc.chunk.css.map"
+    "static/css/main.d69c9577.chunk.css.map": "/koro-koro-kirby/static/css/main.d69c9577.chunk.css.map"
   }
 }
