@@ -1,11 +1,14 @@
 import React from 'react';
-import Canvas from '../Canvas/Canvas.component';
+
+import style from './App.module.scss';
+
+import CanvasContainer from '../CanvasContainer/CanvasContainer.component';
 
 function App() {
 	return (
-		<div className="App">
-			<h1>korokoro kirby</h1>
-			<Canvas />
+		<div className={style.app}>
+			<h1 className={style.title}>korokoro kirby</h1>
+			<CanvasContainer />
 		</div>
 	);
 }

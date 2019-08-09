@@ -1,0 +1,36 @@
+@import "../../sass/variables";
+
+@mixin flexCenter {
+}
+
+.container {
+  position: relative;
+}
+
+.message {
+  background-color: #fff;
+  padding: 3rem;
+
+  color: $color-grey-dark-1;
+  font-size: 1.6rem;
+  box-shadow: 1px 1px 3px 1px #0000002b;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  & > h1 {
+    font-size: 3rem;
+    color: #ff6060;
+  }
+
+  & > * {
+    margin-bottom: 1.5rem;
+  }
+}

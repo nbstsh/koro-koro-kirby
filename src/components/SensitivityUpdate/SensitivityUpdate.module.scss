@@ -1,0 +1,32 @@
+@import "../../sass/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+
+  font-weight: bold;
+  color: $color-grey-dark-3;
+}
+
+.button {
+  background-color: #fff;
+  border: $color-grey-light-4;
+  padding: 1rem 1.5rem;
+  outline: none;
+  font-size: 2rem;
+}
+
+.number {
+  background-color: #fff;
+  padding: 0 2rem;
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+}

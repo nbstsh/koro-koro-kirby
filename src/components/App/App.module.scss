@@ -1,0 +1,19 @@
+@import "../../sass/variables";
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.title {
+  font-family: "Nunito", sans-serif;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $color-grey-dark-3;
+  font-size: 3rem;
+  padding: 1rem;
+}
