@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/koro-koro-kirby/static/css/main.1971b7cc.chunk.css",
-    "main.js": "/koro-koro-kirby/static/js/main.54f0bb1e.chunk.js",
-    "main.js.map": "/koro-koro-kirby/static/js/main.54f0bb1e.chunk.js.map",
+    "main.js": "/koro-koro-kirby/static/js/main.98950393.chunk.js",
+    "main.js.map": "/koro-koro-kirby/static/js/main.98950393.chunk.js.map",
     "runtime~main.js": "/koro-koro-kirby/static/js/runtime~main.cc406e74.js",
     "runtime~main.js.map": "/koro-koro-kirby/static/js/runtime~main.cc406e74.js.map",
     "static/js/2.5b025c7c.chunk.js": "/koro-koro-kirby/static/js/2.5b025c7c.chunk.js",
     "static/js/2.5b025c7c.chunk.js.map": "/koro-koro-kirby/static/js/2.5b025c7c.chunk.js.map",
     "index.html": "/koro-koro-kirby/index.html",
-    "precache-manifest.61b1951276bf6f836dcd987b9ec84e24.js": "/koro-koro-kirby/precache-manifest.61b1951276bf6f836dcd987b9ec84e24.js",
+    "precache-manifest.3e471d3e64957cda41c1f1eaf18f1921.js": "/koro-koro-kirby/precache-manifest.3e471d3e64957cda41c1f1eaf18f1921.js",
     "service-worker.js": "/koro-koro-kirby/service-worker.js",
     "static/css/main.1971b7cc.chunk.css.map": "/koro-koro-kirby/static/css/main.1971b7cc.chunk.css.map"
   }
