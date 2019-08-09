@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ef3b4568c6a2f154e7a0c89b5c52f87",
+    "revision": "cff2583a636298679472c99728964df1",
     "url": "/koro-koro-kirby/index.html"
   },
   {
-    "revision": "164ad565ffc44d03f24e",
+    "revision": "d9f26bb2227663964869",
     "url": "/koro-koro-kirby/static/css/main.1971b7cc.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/koro-koro-kirby/static/js/2.5b025c7c.chunk.js"
   },
   {
-    "revision": "164ad565ffc44d03f24e",
-    "url": "/koro-koro-kirby/static/js/main.4048fc29.chunk.js"
+    "revision": "d9f26bb2227663964869",
+    "url": "/koro-koro-kirby/static/js/main.fc1b3d42.chunk.js"
   },
   {
     "revision": "d89f34488c34664aaac7",
