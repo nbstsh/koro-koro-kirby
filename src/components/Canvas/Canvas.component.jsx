@@ -7,7 +7,9 @@ const CANVAS_ELEMENT_CLASS = 'kirby-canvas';
 
 const Canvas = () => {
 	const { deviceOrientation } = useDevicxeOrientation();
-	const { moveKirby } = useKirby(CANVAS_ELEMENT_CLASS);
+	const { moveKirby, sensitivity, setSensitivity } = useKirby(
+		CANVAS_ELEMENT_CLASS
+	);
 
 	useEffect(() => {
 		if (!deviceOrientation) return;
@@ -18,11 +20,16 @@ const Canvas = () => {
 	}, [deviceOrientation, moveKirby]);
 
 	return (
-		<canvas
-			className={CANVAS_ELEMENT_CLASS}
-			width={window.innerWidth}
-			height={window.innerHeight}
-		/>
+		<>
+			<button style={{padding: '1rem'}} onClick={() => setSensitivity(sensitivity + 1)}>+</button>
+			<span>{sensitivity}</span>
+			<button style={{padding: '1rem'}}  onClick={() => setSensitivity(sensitivity - 1)}>-</button>
+			<canvas
+				className={CANVAS_ELEMENT_CLASS}
+				width={window.innerWidth}
+				height={window.innerHeight}
+			/>
+		</>
 	);
 };
 

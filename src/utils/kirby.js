@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback, useState } from 'react';
 import Zdog from 'zdog';
 
 // colors
@@ -6,6 +6,13 @@ const COLOR_PINK = '#F8B';
 const COLOR_BLUSH = '#F5A';
 const COLOR_BLACK = '#333';
 const COLOR_RED = '#D03';
+
+// SIZE
+const ZOOM = 3;
+const BODY_STROKE = 22;
+
+// SENSITIVITY
+const SENSITIVITY = 1;
 
 // 1 TAU = 1 round
 var TAU = Zdog.TAU;
@@ -17,12 +24,12 @@ const setCanvasElementClassName = v => (canvasElementClassName = v);
 const generateIllo = () =>
 	new Zdog.Illustration({
 		element: `.${canvasElementClassName}`,
-		zoom: 3
+		zoom: ZOOM
 	});
 
 const addBodyToIllo = illo =>
 	new Zdog.Shape({
-		stroke: 22,
+		stroke: BODY_STROKE,
 		addTo: illo,
 		color: COLOR_PINK
 	});
@@ -121,31 +128,9 @@ export const initIllo = () => {
 	return illo;
 };
 
-// let movementX = 0;
-// let movementY = 0;
-
-// const animate = () => {
-// 	// illo.rotate.y += TAU / 360;
-// 	illo.rotate.x += (TAU / 360) * movementY;
-// 	illo.rotate.y += (TAU / 360) * movementX;
-// 	illo.translate.x += (TAU / 360) * -1 * movementX;
-// 	illo.translate.y += (TAU / 360) * -1 * movementY;
-// 	illo.updateRenderGraph();
-
-// 	requestAnimationFrame(animate);
-// };
-
-// animate();
-
-// const canvasEl = document.querySelector('.kirby-face-canvas');
-
-// canvasEl.addEventListener('mousemove', e => {
-// 	movementX = -1 * e.movementX;
-// 	movementY = -1 * e.movementY;
-// });
-
 export const useKirby = canvasElementClassName => {
 	const illoRef = useRef(null);
+	const [sensitivity, setSensitivity] = useState(SENSITIVITY);
 
 	useEffect(() => {
 		if (canvasElementClassName)
@@ -159,14 +144,14 @@ export const useKirby = canvasElementClassName => {
 	const moveKirby = useCallback(
 		(incrementX, incrementY) => {
 			const illo = illoRef.current;
-			illo.rotate.x += (TAU / 360) * incrementY;
-			illo.rotate.y += (TAU / 360) * incrementX;
-			illo.translate.x += (TAU / 360) * -1 * incrementX;
-      illo.translate.y += (TAU / 360) * -1 * incrementY;
-      illo.updateRenderGraph();
+			illo.rotate.x += (TAU / 360) * -1 * incrementY * sensitivity;
+			illo.rotate.y += (TAU / 360) * -1 * incrementX * sensitivity;
+			illo.translate.x += incrementX * 0.1 * sensitivity;
+			illo.translate.y += incrementY * 0.1 * sensitivity;
+			illo.updateRenderGraph();
 		},
-		[illoRef]
+		[illoRef, sensitivity]
 	);
 
-	return { moveKirby };
+	return { moveKirby, sensitivity, setSensitivity };
 };
