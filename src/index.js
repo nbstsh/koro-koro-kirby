@@ -5,7 +5,7 @@ import './sass/main.scss';
 
 import * as serviceWorker from './serviceWorker';
 
-import App from './App';
+import App from './components/App/App.component';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
